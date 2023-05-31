@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Alura</title>
+    <link rel="stylesheet" type="text/css" href="tu-archivo-css.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="encriptador.html"><img src="imagenes/logo.png"></a></h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div id="parte1">
+                <img class="muneco" src="imagenes/muneco.png">
+                <img class="ningunmensaje" src="imagenes/ningunmensaje.png">
+                <form>
+                    <textarea id="texto" cols="70" rows="10" class="input" placeholder="Ingrese texto aquí"></textarea>
+                </form>
+            </div>
+
+            <div id="parte2" style="display: none;">
+                <div class="contenedor">
+                    <textarea readonly id="textA" cols="auto" rows="auto" class="textencriptado"
+                        placeholder=""></textarea>
+                    <button type="button" class="btn-copiar" onclick="copiar()">Copiar</button>
+                </div>
+            </div>
+
+            <div>
+                <img class="min" src="imagenes/solomin.png">
+            </div>
+
+            <div class="botones">
+                <button id="encriptarBtn" onclick="btnEncriptar()" type="button" class="encriptar">Encriptar</button>
+                <button id="desencriptarBtn" onclick="btnDesencriptar()" type="button"
+                    class="desencriptar">Desencriptar</button>
+            </div>
+    </main>
+    </div>
+    <footer>
+    </footer>
+
+    <script src="encriptador.js"></script>
+</body>
+
+</html>
